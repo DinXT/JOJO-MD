@@ -33,9 +33,8 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
 	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
 	Balance : $${toCommas(getBalance(sender, balance))}
-  Note : Anggap _<>_ *Tidak Ada*
   
-  _Ada Bug? Ketik ${prefix}report Bug mu_
+  ```WhatsApp Bot Deployed By DinXYZ.```
   ${readmore}
   *( 📍 )  Main Menu*
   ≻ ${prefix}menu
@@ -73,9 +72,6 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}waifu
   ≻ ${prefix}husbu
   ≻ ${prefix}yaoi
-  
-  *( 📛 ) Nsfw User Free*
-  ≻ ${prefix}hentai
   
   *( ⚠️ )  Premium User*
   ≻ ${prefix}ass
@@ -216,7 +212,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 
   *THANKS TO*
   - Allah SWT
-  - Baileys-Md (Adiwa Jshing)
+  - Baileys-Md (Adiwajshing)
   - @yannnnn.zz_ (Riyan)
   - @sofunsyabi.id (Arasya)
   - M Hadi Firmansya (Hadi Api)
