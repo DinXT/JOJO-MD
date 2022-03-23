@@ -42,7 +42,7 @@ const ovo = "081380674817"
 const dana = "081380674817"
 const pulsa = "081380674817"
 const pulsa2 = "087819654911"
-const ig = "igdinxyz.jpg"
+const ig = "dinxt.xyz"
 
 // Exif
 const Exif = require("../lib/exif")
