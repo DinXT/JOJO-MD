@@ -37,12 +37,12 @@ const jojoapi = "Syaa"
 const ikiapi = "FuckBitch"
 
 // Setting Donasi
-const gopay = "0882-1329-2687"
-const ovo = "0813-1994-4917"
-const dana = "0813-1994-4917"
-const pulsa = "0813-1994-4917"
-const pulsa2 = "0882-1329-2687"
-const ig = "sofunsyabi.jpg"
+const gopay = "081380674817"
+const ovo = "081380674817"
+const dana = "081380674817"
+const pulsa = "081380674817"
+const pulsa2 = "087819654911"
+const ig = "igdinxyz.jpg"
 
 // Exif
 const Exif = require("../lib/exif")
@@ -234,15 +234,15 @@ module.exports = async(conn, msg, m, setting) => {
 		}
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6281319944917` } },
 		const buttonsDefault = [
-			{ urlButton: { displayText: `GRUP JOJO-BOT`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
-			{ urlButton: { displayText: `Youtube Channel`, url : `https://youtube.com/channel/UCZzt-Qw0zTYc8UP-LL2G5fA` } },
-			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
+			{ urlButton: { displayText: `Group Official`, url : `https://bit.ly/36ooorf` } },
+			{ urlButton: { displayText: `Instagram`, url : `https://instagram.com/dinxt.xyz` } },
+			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Pemilik Bot`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `Info Bot`, id: `${prefix}infobot` } },
 		]
 		const button5 = [
-			{ callButton: { displayText: `Number Owner`, phoneNumber: `0813-1994-4917` } },
-			{ urlButton: { displayText: `𝙂𝙧𝙪𝙥 𝙅𝙤𝙟𝙤`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
+			{ callButton: { displayText: `Owner Number`, phoneNumber: `087819654911` } },
+			{ urlButton: { displayText: `Group Official`, url : `https://bit.ly/36ooorf` } },
 			{ quickReplyButton: { displayText: `Back To Menu 🔙`, id: `${prefix}menu` } },
 		]
         
@@ -342,36 +342,33 @@ if (chats.startsWith("woy")){
 conn.sendMessage(from, { caption: teks, image: {url: `https://telegra.ph/file/7b927d601b6c7496d01ef.jpg`}, templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
 				break
 case prefix+'donasiah':
-  reply(`Jika Ingin Donasi Harap Hubungi Owner\n\nhttps://wa.me/6281319944917`)
+  reply(`Jika Ingin Donasi Harap Hubungi Owner\n\nhttps://wa.me/6287819654911`)
   break
 case prefix+'donasi':
   case prefix+'donate':
   var donasibut = [
-			{ callButton: { displayText: `Number Owner`, phoneNumber: `0813-1994-4917` } },
-			{ urlButton: { displayText: `𝙂𝙧𝙪𝙥 𝙅𝙤𝙟𝙤`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
+			{ callButton: { displayText: `Owner Number`, phoneNumber: `0813-1994-4917` } },
+			{ urlButton: { displayText: `Group Official`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
 			{ quickReplyButton: { displayText: `Aku Ingin Donasi`, id: `${prefix}donasiah` } },
 		]
 var teks = `  │
-  ├─ ❏ GOPAY
-  ├─ ❏ ${gopay}
-  ├─ ❏ OVO
-  ├─ ❏ ${ovo}
-  ├─ ❏ DANA
-  ├─ ❏ ${dana}
-  ├─ ❏ PULSA
-  ├─ ❏ ${pulsa}
-  ├─ ❏ PULSA2
-  ├─ ❏ ${pulsa2}
-  ├─ ❏ INSTAGRAM
-  └─ ❏ https://www.instagram.com/${ig}
+  ┌──❏ 
+  ├─ Gopay : ${gopay}
+  ├─ Dana : ${dana}
+  ├─ OVO : ${ovo}
+  ├─ Pulsa Telkomsel : ${pulsa}
+  ├─ Pulsa XL : ${pulsa2}
+  └──❏ 
+  ┊Instagram : https://instagram.com/${ig}
+  └──❏
   
   Donasi Untuk Upgrade Ke Fitur Premium
-  Note : Donasi Seikhlasnya`
+  Note : Donasi Seikhlasnya Aja.`
  conn.sendMessage(from, { caption: teks, image: {url: `https://i.ibb.co/CPcFJ6c/IMG-20220131-WA0504.jpg`}, templateButtons: donasibut, footer: '© Jojo - Bot', mentions: [sender]} )  
 			    break
 case prefix+'sewa':
   case prefix+'daftarprem':
-  var teks = `*[ LIST HARGA JOJO PREM ]*
+  var teks = `*[ LIST HARGA PREMIUM ]*
 
 _Yakin kamu mau daftar ke premium?_
 
@@ -383,9 +380,9 @@ _Yakin kamu mau daftar ke premium?_
 - Transfer Limit Game
 
 *LIST DAFTAR PREMIUM*
-- Rp.10.000 - Perbulan
-- Rp.25.000 - Dua Bulan
-- Rp.50.000 - Lima Bulan`
+- Rp.2000 - Perbulan
+- Rp.5000 - Tiga Bulan
+- Rp.10000 - Permanen`
 			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync(setting.pathimg) }, templateButtons: button5, footer: '© Jojo - Bot', mentions: [sender] })
 			    break
 			case prefix+'runtime':
@@ -402,12 +399,12 @@ case prefix+'groupjojo':
 case prefix+'infobot':
   case prefix+'inforobot':
     case prefix+'info':
-      var caption = `*[ INFO ROBOT JOJO ]*
+      var caption = `*[ INFO BOT ]*
 
-*Nama Bot :* Jojo
-*Name Owner :* Arasya
-*Nomor Bot :* wa.me/6288213292687
-*Nomor Owner :* wa.me/6281319944917
+*Nama Bot :* Unknown
+*Name Owner :* DinXYZ
+*Nomor Bot :* wa.me/62881010367601
+*Nomor Owner :* wa.me/6287819654911
 *Engine :* NodeJs
 *Status :* Aktif
 *Aktif Selama :* ${runtime(process.uptime())}
